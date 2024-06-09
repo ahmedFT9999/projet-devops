@@ -5,6 +5,9 @@ WORKDIR /app
 # Copy the Maven project (including pom.xml) to the working directory
 COPY . .
 
+# Grant executable permissions to the Maven Wrapper script
+RUN chmod +x mvnw
+
 # Build the Spring Boot application using Maven
 RUN ./mvnw package -DskipTests
 
