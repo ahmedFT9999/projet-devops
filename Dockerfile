@@ -1,7 +1,5 @@
 FROM openjdk:11-jre-slim
 
-COPY target/artifact-spring.jar /app/artifact-spring.jar
-
 WORKDIR /app
 
 # Copy the Maven project (including pom.xml) to the working directory
