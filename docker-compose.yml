@@ -5,7 +5,7 @@ services:
     image: ahmedft1999/image-spring:latest
     container_name: spring-app
     ports:
-      - "8090:8080"
+      - "8082:8080"
     depends_on:
       - mysql
 
