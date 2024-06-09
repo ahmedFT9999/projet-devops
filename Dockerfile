@@ -4,6 +4,6 @@ COPY target/artifact-spring.jar /app/artifact-spring.jar
 
 WORKDIR /app
 
-EXPOSE 8080
+EXPOSE 8082
 
 CMD ["java", "-jar", "artifact-spring.jar"]
