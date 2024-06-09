@@ -7,3 +7,4 @@ WORKDIR /app
 EXPOSE 8080
 
 CMD ["java", "-jar", "artifact-spring.jar"]
+DOCKER_COMPOSE_ARCH = "${sh(script: 'echo $(uname -s)-$(uname -m)', returnStdout: true).trim()}"
